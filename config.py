@@ -1,5 +1,9 @@
-from  dotenv import database_url
+from  dotenv import load_dotenv
+import os
 
-database= Database()
+load_dotenv()
+
+database=os.environ.get("database")
+
 
     
